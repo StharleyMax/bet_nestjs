@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { Clients } from './entities/clients.entities';
 
 @Module({
   imports: [
@@ -11,7 +12,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       port: parseInt(process.env.PORT),
       username: process.env.USERNAME,
       password: process.env.PASSWORD,
-      entities: [],
+      entities: [Clients],
       migrations: [],
       synchronize: false,
     }),
