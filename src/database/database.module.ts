@@ -13,7 +13,7 @@ import { Clients } from './entities/clients.entities';
       username: process.env.USERNAME,
       password: process.env.PASSWORD,
       entities: [Clients],
-      migrations: [],
+      migrations: ['./src/database/migrations/*.ts'],
       synchronize: false,
     }),
   ],

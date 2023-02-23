@@ -6,9 +6,9 @@ module.exports = {
     rejectUnauthorized: false,
   },
   entities: ['./dist/**/*.entity.js'],
-  migrations: ['./dist/migrations/*.js'],
+  migrations: ['./src/database/migrations/*.ts'],
   cli: {
-    migrationsDir: './src/migrations',
+    migrationsDir: './src/database/migrations',
   },
   syncronize: false,
 };
