@@ -5,6 +5,7 @@ module.exports = {
   ssl: {
     rejectUnauthorized: false,
   },
+
   entities: ['./dist/**/*.entity.js'],
   migrations: ['./src/database/migrations/*.ts'],
   cli: {

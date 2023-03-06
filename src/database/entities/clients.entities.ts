@@ -10,4 +10,13 @@ export class Clients {
 
   @Column({ name: 'email' })
   email: string;
+
+  @Column({ name: 'phone' })
+  phone: string;
+
+  @Column({ name: 'createAt', type: 'timestamptz' })
+  createAt: Date;
+
+  @Column({ name: 'updatedAt', type: 'timestamptz' })
+  updatedAt: Date;
 }

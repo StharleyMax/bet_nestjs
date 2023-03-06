@@ -8,10 +8,11 @@ import { Clients } from './entities/clients.entities';
     ConfigModule.forRoot(),
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: process.env.DATABASE_HOST,
+      host: 'localhost',
       port: parseInt(process.env.PORT),
       username: process.env.USERNAME,
       password: process.env.PASSWORD,
+      database: process.env.DATABASE_HOST,
       entities: [Clients],
       migrations: ['./src/database/migrations/*.ts'],
       synchronize: false,

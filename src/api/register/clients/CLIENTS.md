@@ -1,2 +1,2 @@
-CRUD clients.
-depois vou detalhar melhor aqui
+Será feito o CRUD dos clientes por enquanto.
+CRUD básico.

@@ -1,9 +1,8 @@
 import { Module } from '@nestjs/common';
-import { RegisterModule } from './register/register.module';
-import { ReportModule } from './report/report.module';
+import { ClientsModule } from './register/clients/clients.module';
 
 @Module({
-  imports: [RegisterModule, ReportModule],
+  imports: [ClientsModule],
   controllers: [],
   providers: [],
   exports: [],
